@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesRecomendados.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"> Inicio</a></li>
+                <li class="dropdown">
+                    <a href="Servicios.html">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Bodas</a></li>
+                    <li><a href="#">Fiestas de cumpleaños</a></li>
+                    <li class   ="dropdown">
+                        <a href="#">Eventos corporativos</a>
+                        <ul class="submenu">
+                            <li><a href="#">Conferencias</a></li>
+                            <li><a href="#">Reuniones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="dropdown">
+                    <a href="#">Lugares</a>
+                    <ul class="submenu">
+                        <li><a href="Coronado.html">Centro de eventos Coronado</a></li>
+                        <li><a href="HotelFiesta.html">Hotel Fiesta</a></li>
+                        <li><a href="LagunasDeDoñaAna.html">Lagunas de Doña Ana</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Recomendados.html">Recomendados</a></li>
+           <li><a href="preguntasF.html">Preguntas frecuentes</a></li>
+
+           <li class="buscador-item">
+          <input type="text" id="buscador" placeholder="Buscar...">
+          <div id="resultados-busqueda"></div>
+          </li>
+        </ul>  
+        </nav>
+    </header>
+    <main>
+       <main>
+    <h1>Bienvenidos a Nuestro Servicio de Catering</h1>
+    <p>Una empresa comprometida con la excelencia gastronómica y la organización de eventos especiales. Nuestro objetivo es brindar experiencias culinarias memorables para cada ocasión, con menús personalizados, atención de calidad e ingredientes seleccionados.</p>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="slide">
+                <img src="img/catering-bodas-en-la-playa.jpg" alt="Boda">
+                <div class="caption">
+                    <h2>Bodas</h2>
+                    <p>Ofrecemos servicios de catering para bodas, con menús personalizados y opciones para todos los gustos.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/FiestaParaNinos.jpg" alt="Fiesta de cumpleaños">
+                <div class="caption">
+                    <h2>Fiestas de cumpleaños</h2>
+                    <p>Organizamos servicios de catering para fiestas de cumpleaños, con opciones divertidas y deliciosas para todas las edades.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/CateringEmpresarial.jpg" alt="Evento corporativo">
+                <div class="caption">
+                    <h2>Eventos corporativos</h2>
+                    <p>Ofrecemos servicios de catering para eventos corporativos, con opciones de comida y bebida para conferencias, reuniones y otros eventos empresariales.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/desayunos.jpg" alt="Desayuno">
+                <div class="caption">
+                    <h2>Desayunos</h2>
+                    <p>Ofrecemos servicios de catering para desayunos, con opciones de comida y bebida para cualquier tipo de evento.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/caterin.postres.jpg" alt="Postre">
+                <div class="caption">
+                    <h2>Postres</h2>
+                    <p>Ofrecemos servicios de catering para postres, con opciones deliciosas para cualquier tipo de evento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="prevSlide()">&#9665</button>
+            <button onclick="nextSlide()">&#9655</button>
+        </div>
+        <div class="dots"></div>
+    </div>
+     <script src="funcionesRecomendados.js"></script>
+</main>
+    </main>
+    <aside>
+        <h2>Ofertas especiales</h2>
+        <p>¡Aprovecha nuestras ofertas especiales para eventos! Contáctanos para más información.</p>
+        <div class="ofertas">
+            <div class="oferta">
+                <h3>Descuento del 10% en bodas</h3>
+                <p>Obtén un descuento del 10% en nuestros servicios de catering para bodas. ¡Contáctanos para más información!</p>
+                <img src="img/catering-bodas-en-la-playa.jpg" alt="Boda" width="300" height="200">
+            </div>
+            <div class="oferta">
+                <h3>Desayunos corporativos</h3>
+                <p>Obtén desayunos deliciosos para tu evento corporativo a mitad de precio. ¡Contáctanos para más información!</p>
+                <img src="img/DesayunosCorp.jpg" alt="Desayuno corporativo" width="300" height="200">
+            </div>
+            <div class="oferta">
+                <h3>Animación de fiestas de cumpleaños</h3>
+                <p>Obtén animación de calidad para tu fiesta de cumpleaños. ¡Contáctanos para más información!</p>
+                <img src="img/Animacion.jpg" alt="Animación de fiesta de cumpleaños" width="300" height="200">
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; 2024 Catering Service. Todos los derechos reservados.</p> 
+    </footer>
+    <script src="funciones.js"></script>
+
+<!-- Imagen del robot que abre el chat cuando se hace clic -->
+ <img  id="btnAbrirChat" src="/Tarea/img/chatbot.png" 
+     alt="Abrir chat" title="Haz clic para chatear">
+<div id="chatbox"><!-- Contenedor del chat, inicialmente oculto -->
+  <div id="mensajes"></div> <!-- Área donde se muestran los mensajes -->
+  <input type="text" id="entradaTexto" placeholder="Escribe un número..."> 
+  <button onclick="enviarMensaje()">Enviar</button> <!-- Botón para enviar el mensaje -->
+  <link rel="stylesheet" href="stylesChatBot.css">
+</div>
+    <script src="funcionesChatBot.js"> </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesChatBot.css">
+</head>
+<body>
+    <header>
+       <nav>
+            <ul class="menu">
+                <li><a href="index.html"> Inicio</a></li>
+                <li class="dropdown">
+                    <a href="Servicios.html">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Bodas</a></li>
+                    <li><a href="#">Fiestas de cumpleaños</a></li>
+                    <li class   ="dropdown">
+                        <a href="#">Eventos corporativos</a>
+                        <ul class="submenu">
+                            <li><a href="#">Conferencias</a></li>
+                            <li><a href="#">Reuniones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="dropdown">
+                    <a href="#">Lugares</a>
+                    <ul class="submenu">
+                        <li><a href="Coronado.html">Centro de eventos Coronado</a></li>
+                        <li><a href="HotelFiesta.html">Hotel Fiesta</a></li>
+                        <li><a href="LagunasDeDoñaAna.html">Lagunas de Doña Ana</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Recomendados.html">Recomendados</a></li>
+           <li><a href="preguntasF.html">Preguntas frecuentes</a></li>
+
+           <li class="buscador-item">
+          <input type="text" id="buscador" placeholder="Buscar...">
+          <div id="resultados-busqueda"></div>
+          </li>
+        </ul>  
+        </nav>
+    </header>
+    <main>
+     <h2> Mi informacion de contacto</h2> <!--- Encabezado de segundo nivel-->
+        <table border="1" cellpadding="10">
+            <tr><th>Tipo</th><th>Informacion</th></tr>
+            <tr><td>Email</td><td>hector@example.com</td></tr>
+            <tr><td>Telefono</td><td>123-456-7890</td></tr>
+            <tr><td>Ciudad</td><td>San Jose Costa Rica</td></tr>
+             <tr><th colspan="2">Gracias</th></tr>
+        </table> <br><br>
+     <h2>Contacto</h2>
+     <p> Como podemos ayudarte?</p>
+    <form action="enviar_formulario.php" method="post">
+         <label for="nombre">Nombre:</label>
+         <input type="text" id="nombre" name="nombre" required><br><br>
+         <label for="Correo electronico">Correo electrónico:</label>
+         <input type="email" id="correo" name="correo" required><br><br>
+         <label for="fecha">Fecha:</label>
+         <input type="date" id="fecha" name="fecha" required><br><br>
+         <label for="mensaje">Mensaje:</label><br>
+         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+         <input type="submit" value="Enviar">
+         </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Catering Service. Todos los derechos reservados.</p> 
+    </footer>
+<!-- Imagen del robot que abre el chat cuando se hace clic -->
+<img  id="btnAbrirChat" src="/Tarea/img/chatbot.png" 
+     alt="Abrir chat" title="Haz clic para chatear">
+<div id="chatbox"><!-- Contenedor del chat, inicialmente oculto -->
+  <div id="mensajes"></div> <!-- Área donde se muestran los mensajes -->
+  <input type="text" id="entradaTexto" placeholder="Escribe un número..."> 
+  <button onclick="enviarMensaje()">Enviar</button> <!-- Botón para enviar el mensaje -->
+</div>
+    <script src="funcionesChatBot.js"> </script>
+</body>
+</html>

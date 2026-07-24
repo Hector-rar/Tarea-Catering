@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="stylesChatBot.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"> Inicio</a></li>
+                <li class="dropdown">
+                    <a href="Servicios.html">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Bodas</a></li>
+                        <li><a href="#">Fiestas de cumpleaños</a></li>
+                        <li class="dropdown">
+                            <a href="#">Eventos corporativos</a>
+                            <ul class="submenu">
+                                <li><a href="#">Conferencias</a></li>
+                                <li><a href="#">Reuniones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Lugares</a>
+                    <ul class="submenu">
+                        <li><a href="Coronado.html">Centro de eventos Coronado</a></li>
+                        <li><a href="HotelFiesta.html">Hotel Fiesta</a></li>
+                        <li><a href="LagunasDeDoñaAna.html">Lagunas de Doña Ana</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Recomendados.html">Recomendados</a></li>
+                <li><a href="preguntasF.html">Preguntas frecuentes</a></li>
+                <li class="buscador-item">
+                    <input type="text" id="buscador" placeholder="Buscar...">
+                    <div id="resultados-busqueda"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container columna">
+        <h2>Preguntas Frecuentes</h2>
+        <!-- BUSCADOR -->
+        <div class="busqueda">
+            <input type="text" id="campoBusqueda" placeholder="Buscar..." onkeyup="buscar()">
+        </div>
+        <!-- ACORDEÓN -->
+        <div class="acordeon">
+            <details>
+                <summary>Proceso de reserva</summary>
+                <p>Para reservar nuestros servicios, puede contactarnos a través de nuestro formulario en línea o llamando a nuestro número de teléfono. Le solicitaremos información sobre su evento para poder ofrecerle la mejor atención.</p>
+            </details>
+            <details>
+                <summary>Política de pagos</summary>
+                <p>Aceptamos tarjetas, transferencias y pagos en efectivo mediante plataformas autorizadas.</p>
+            </details>
+            <details>
+                <summary>Costos</summary>
+                <p>
+                    Nuestros costos varían según el tipo de evento y los servicios seleccionados. Le ofrecemos opciones competitivas para satisfacer sus necesidades y presupuesto.
+                    <br><br>
+                    <a href="documento.pdf" target="_blank">📄 Ver detalles en PDF</a>
+                </p>
+            </details>
+            <details>
+                <summary>Política de privacidad</summary>
+                <p>Sus datos serán tratados conforme a la ley y no serán compartidos sin su consentimiento.</p>
+            </details>
+        </div>
+    </div>
+    <footer>
+        <div class="contacto">
+            <h3>Contáctenos</h3>
+            <div class="links-fila">
+                <a href="https://wa.me/+1234567890" target="_blank">
+                    <img src="img/whatsapp.jpg"> WhatsApp: +1234567890
+                </a>
+                <a href="tel:+5064567890">
+                    <img src="img/llamada.webp"> Teléfono: +5064567890
+                </a>
+                <a href="mailto:contacto@ejemplo.com">
+                    <img src="img/correo.png"> Correo: contacto@ejemplo.com
+                </a>
+            </div>
+        </div>
+        <p>&copy;2026 Derechos reservados</p>
+    </footer>
+
+    <img id="btnAbrirChat" src="/Tarea/img/chatbot.png" alt="Abrir chat" title="Haz clic para chatear">
+    <div id="chatbox">
+        <div id="mensajes"></div>
+        <input type="text" id="entradaTexto" placeholder="Escribe un número...">
+        <button onclick="enviarMensaje()">Enviar</button>
+    </div>
+    <script src="funcionesChatBot.js"></script>
+
+</body>
+</html>

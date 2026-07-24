@@ -1,0 +1,38 @@
+#btnAbrirChat { /* Estilo para la imagen del robot que abre el chat */
+      position: fixed; /* Fija la imagen en la parte inferior derecha */
+      bottom: 20px;right: 20px;  width: 100px;height: 120px;cursor: pointer; 
+      z-index: 1000; /* Asegura que la imagen esté por encima de otros elementos */
+    }
+    #chatbox {    /* Estilo del chatbox (oculto inicialmente) */
+      display: none; position: fixed; bottom: 90px;right: 200px;  width: 320px; 
+      background: #fff; border: 1px solid #ccc; border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);font-family: sans-serif; /* Define la fuente */
+      padding: 10px; z-index: 999; /* Asegura que el chat esté por encima de otros elementos */
+    }
+    #mensajes {    /* Estilo para el área de mensajes */
+      height: 400px; overflow-y: auto; /* Permite desplazamiento vertical cuando hay muchos mensajes */
+      border: 1px solid #eee; padding: 5px;
+      margin-bottom: 5px; font-size: 20px;
+         white-space: pre-line; /* Permite que los saltos de línea sean visibles */
+    }
+    .mensaje-bot { /* Estilo de la burbuja del mensaje del bot */
+      max-width: 80%; /* El mensaje del bot ocupa hasta el 80% del ancho */
+      padding: 8px 12px; border-radius: 15px; margin: 5px; /* Espaciado alrededor de la burbuja */
+      background-color: #e0e0e0; text-align: left; /* Alineación del texto a la izquierda */
+      float: left; /* El mensaje flotará a la izquierda */
+      clear: both; /* Limpia el flujo de otros elementos */
+    }
+    .mensaje-usuario {    /* Estilo de la burbuja del mensaje del usuario */
+      max-width: 80%; /* El mensaje del usuario ocupa hasta el 80% del ancho */
+      padding: 8px 12px; border-radius: 15px;  margin: 5px; 
+      background-color: #c8f7c5; /* Color de fondo verde claro */
+      text-align: right; float: right;clear: both; 
+    }
+    input[type="text"] {   
+      width: 70%; padding: 5px;  border-radius: 5px;  border: 1px solid #ccc;
+      font-size: 18px;
+    } /* Estilo de la caja de texto y el botón */
+    button {
+      padding: 6px 10px; margin-left: 5px; background-color: #4CAF50; 
+      color: white; border: none; border-radius: 5px; 
+    }
